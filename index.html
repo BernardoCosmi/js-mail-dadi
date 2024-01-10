@@ -10,24 +10,38 @@
 
 <body>
     <!--ANCHOR LANCIO DEI DADI -->
-    <div class="container text-center p-2 m-2">
+    <div class="container text-center p-2 m-auto my-2 border border-success border-5 rounded">
         <h1>LANCIO DEI DADI</h1>
-    <button class="btn btn-primary p-2 m-2" id="btnThrow">Lancia i dadi</button>
-    <button class="btn btn-danger p-2 m-2" id="btnReset">Reset</button>
-    
-    <div class="d-flex align-items-center justify-content-between gap-3 fs-3 fw-bolder">
-        <h2>Il numero uscito all'utente è -></h2>
-        <div class="userDice"></div>
-    </div>
-    <div class="d-flex align-items-center justify-content-between gap-3 fs-3 fw-bolder">
-        <h2>Il numero uscito alla CPU è -></h2>
-        <div class="cpuDice"></div>
-    </div>
-    <h1 id="result"></h1>
+        <button class="btn btn-primary p-2 m-2" id="btnThrow">Lancia i dadi</button>
+        <button class="btn btn-danger p-2 m-2" id="btnReset1">Reset</button>
+        
+        <div class="d-flex align-items-center justify-content-between gap-3 fs-3 fw-bolder">
+            <h2>Il numero uscito all'utente è -></h2>
+            <div class="userDice"></div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between gap-3 fs-3 fw-bolder">
+            <h2>Il numero uscito alla CPU è -></h2>
+            <div class="cpuDice"></div>
+        </div>
+        <h1 id="result"></h1>
     </div>
     
 
     <!--ANCHOR CONTROLLO EMAIL -->
+    <div class="container text-center p-2 m-auto my-5 border border-danger border-5 rounded">
+        <h1 class="text-center ">INSERISCI LA TUA EMAIL</h1>
+        <div class="container bg-primary border rounded m-auto p-1">
+            <div class="d-flex mb-2 justify-content-center text-center">
+                <div class="m-4 col-8">
+                    <input type="email" class="form-control" id="userEmail" placeholder="Email">
+                </div>  
+                <button class="btn btn-warning p-2 m-2" id="btnSend">Send</button>
+                <button class="btn btn-danger p-2 m-2" id="btnReset2">Reset</button>
+            </div>
+        </div>
+        <h1 id="accessResult"></h1>
+    </div>
+
 
     <!-- ANCHOR SCRIPT -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js' integrity='sha512-WW8/jxkELe2CAiE4LvQfwm1rajOS8PHasCCx+knHG0gBHt8EXxS6T6tJRTGuDQVnluuAvMxWF4j8SNFDKceLFg==' crossorigin='anonymous'></script>

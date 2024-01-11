@@ -48,15 +48,12 @@ btnSendHtml.addEventListener('click', function(){
     for(let i=0; i<licensedEmail.length; i++){
         if(licensedEmail[i]===userEmailHtml.value){
             emailFound = true;
-            break;
+        }}
+        if(emailFound==true){
+            accessResultHtml.innerHTML = 'Accessso autorizzato'
+        } else{
+            accessResultHtml.innerHTML = 'Accessso negato'
         }
-    }
-    if(emailFound==true){
-        accessResultHtml.innerHTML = 'Accessso autorizzato'
-    } else{
-        accessResultHtml.innerHTML = 'Accessso negato'
-
-    }
 })
 
 btnReset2Html.addEventListener("click", function(){

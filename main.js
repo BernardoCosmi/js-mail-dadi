@@ -6,15 +6,19 @@ const cpuDiceHtml = document.querySelector ('div.cpuDice')
 const resultMessage = document.getElementById('result')
 const btnReset1Html = document.getElementById ('btnReset1');
 
-let userNumber = Math.floor(Math.random() * 6) + 1;
-let cpuNumber = Math.floor(Math.random() * 6) + 1;
 
 btnThrowHtml.addEventListener('click', 
     function(){
-        userDiceHtml.innerHTML = '<div>userNumber</div>';
+
+        let userNumber = Math.floor(Math.random() * 6) + 1;
+        let cpuNumber = Math.floor(Math.random() * 6) + 1;
+
+        userDiceHtml.innerHTML = userNumber;
         cpuDiceHtml.innerHTML = cpuNumber
+
         console.log(userNumber)
         console.log(cpuNumber)
+        
         if(userNumber>cpuNumber){
             resultMessage.innerHTML = 'YOU WIN' 
         }else if(cpuNumber>userNumber){
@@ -40,6 +44,7 @@ let emailFound = false;
 
 console.log(userEmailHtml.value)
 btnSendHtml.addEventListener('click', function(){
+
     for(let i=0; i<licensedEmail.length; i++){
         if(licensedEmail[i]===userEmailHtml.value){
             emailFound = true;
